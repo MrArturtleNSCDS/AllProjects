@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation More Elements</title>
+    <style>
+        body{
+            background-color: #0b0;
+        }
+        .thing{
+            color: white;
+            font-weight:bold;
+            text-align: center;
+            overflow: hidden;
+            font-family: "Kranky";
+        }
+        .inner{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .micro{
+            width: 62px;
+            height: 62px;
+            line-height: 70px;
+            font-size: 52px;
+        }
+        .mini{
+            width: 77px;
+            height: 77px;
+            line-height: 70px;
+            font-size: 52px;
+        }
+        .tiny{
+            width: 96px;
+            height: 96px;
+            line-height: 70px;
+            font-size: 52px;
+        }
+        .small{
+            width: 120px;
+            height: 120px;
+            line-height: 70px;
+            font-size: 52px;
+        }
+        .medium{
+            width: 160px;
+            height: 160px;
+            line-height: 140px;
+            font-size: 52px;
+        }
+        .big{
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            font-size: 140px;
+            position:absolute;
+            top:40px;
+            left: 40px;
+        }
+        .diag1{
+            border-bottom-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+        .diag2{
+            border-bottom-right-radius: 50%;
+            border-top-left-radius: 50%;
+        }
+        .color1{
+            background-color: #090;
+        }
+        .color2{
+            background-color: #0b0;
+        }
+        .circle{
+            border-radius: 50%;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Kranky" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+</head>
+<body>
+    <div class='thing big color1 diag2'>
+        <div class='thing inner medium color2 diag1'>
+            <div class='thing inner small color1 diag2'>
+                <div class='thing inner tiny color2 diag1'>
+                    <div class='thing inner mini color1 diag2'>
+                        <div class='thing inner micro color2 diag1'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='rotation.js'></script>
+</html>

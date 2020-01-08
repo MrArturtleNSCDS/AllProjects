@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        .red{
+            background-color: #800;
+        }
+        .white{
+            background-color: #fff;
+        }
+        .circle{
+            border-radius: 50%;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        #outerCircle{
+            width: 300px;
+            height: 300px;
+        }
+        #innerCircle{
+            width: 200px;
+            height: 200px;
+        }
+        #middleCircle{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id='outerCircle' class='circle red'>
+        <div id='innerCircle' class='circle white'>
+            <div id='middleCircle' class='circle red'>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

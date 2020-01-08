@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Challenge 3</title>
+    <style>
+        .bigThing{
+            width: 100px;
+            height: 100px;
+            color: white;
+            font-weight:bold;
+            line-height: 100px;
+            text-align: center;
+            display:inline-block;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        .smallThing{
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-family: "Kranky";
+            font-size: 40px;
+            overflow: hidden;
+            margin: 25px;
+        }
+        .color1{
+            background-color: darkgreen;
+        }
+        .color2{
+            background-color: darkblue;
+        }
+        .circle{
+            border-radius: 50%;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Kranky" rel="stylesheet">
+</head>
+<body>
+    <div class='bigThing color1'>
+        <div class='smallThing color2'>1</div>
+    </div>
+    <div class='bigThing color2 circle'>2</div>
+    <div class='bigThing color2'>
+        <div class='smallThing color1 circle'>3</div>
+    </div>
+    <div class='bigThing color1 circle'>
+        <div class='smallThing color2 circle'>4</div>
+    </div>
+</body>
+</html>

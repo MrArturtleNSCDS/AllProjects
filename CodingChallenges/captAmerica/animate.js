@@ -1,0 +1,2 @@
+TweenMax.to("#outerCircle",1.5,{rotation:-360,repeat:-1,yoyo:false,ease:SlowMo.easeInOut,transformOrigin: '50% 50%'});
+TweenMax.to("#outerCircle",1,{scale:10,repeat:-1,yoyo:true,ease:Sine.easeInOut, yoyoEase:true});

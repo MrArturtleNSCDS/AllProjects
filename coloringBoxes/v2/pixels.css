@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+
+
+#grid{
+    width: 160px;    
+}
+
+.pixel{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    display: inline-block;
+}
+
+#colorPalette{
+    padding: 7px;
+    background-color: black;
+    display: inline-block;
+}
+
+.colorBox{
+    width: 61px;
+    height: 61px;
+    display: inline-block;
+}
+
+#color1{
+    background-color: blue;
+}
+
+#color2{
+    background-color: red;
+}
+
+#color3{
+    background-color: yellow;
+}
+
+#color4{
+    background-color: orange;
+}
+
+#color5{
+    background-color: lime;
+}
+
+#color6{
+    background-color: purple;
+}
+
+#color6{
+    background-color: white;
+}
+
+#color7{
+    background-color: black;
+}
+
+

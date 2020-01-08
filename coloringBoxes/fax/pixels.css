@@ -1,0 +1,124 @@
+@CHARSET "UTF-8";
+
+/*Human Fax */
+
+body{
+    background-color: #444;
+}
+
+.title{
+    text-align: center;
+    font-family: 'VT323';
+    font-size: 72px;
+    color:#fff;
+}
+
+#contentWrapper{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(calc(-50% - 170px),-50%);
+}
+
+#gridWrapper{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #20639B;
+}
+
+
+techsupport
+
+#modeSelector{
+    color: #fff;
+    text-align: center;
+    font-family: 'Righteous';
+    font-size: 24px;
+}
+
+[type='radio']{
+    height: 24px;
+}
+
+#bottomWrapper{
+    height: 30px;
+}
+
+#toggleWrapper{
+    display: none;
+}
+
+#puzzleName{
+    color: #fff;
+    text-align: center;
+    font-family: 'Righteous';
+    font-size: 24px;
+    float: left;
+}
+
+#arrowWrapper{
+    float: right;
+}
+
+.arrowButton{
+    display: inline-block;
+    background-color: #f90;
+    padding: 3px;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: #15456d 4px 4px 4px;
+}
+
+.arrowButton:hover{
+    background-color: #d60;
+}
+
+#gridContent{
+    border-collapse:collapse;
+}
+
+#gridContent td{
+    padding:0;
+}
+
+.pixel{
+    border: 1px solid #ddd;
+    background-color: #fff;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.on{
+    background-color: #000;
+    border: 1px solid #111;
+}
+
+.correct{
+    background-color: #0a0;
+    color: #fff;
+}
+
+.userInput{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #000;
+    padding: 4px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: 'Major Mono Display';
+    height: 24px;
+    width: 380px;
+}
+
+#export{
+    float: right;
+    background-color: orange;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 4px;
+    cursor:pointer;
+    
+}

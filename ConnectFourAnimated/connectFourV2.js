@@ -38,11 +38,14 @@ function initBoard(){
         spotString += "<div class='column'>";
         frontString += "<div class='column' c='" + c + "'>";
         boardTop += "<div class='dropSpot' c='" + c + "'></div>";
+        var ud=c;
+        var ld=5+c;
+        console.log("settings: " + ud, ld);
         for(var r=5; r>=0; r--){
-            spotString += "<div class='chip' r='" + r + "' c='" + c + "'></div>";
+            spotString += "<div class='chip' r='" + r + "' c='" + c + "' ud='" + (ud) + "' ld='" + (ld) + "'></div>";
             frontString += 
                 "<div class='boardTile'>" +
-                    "<div class='spot' r='" + r + "' c='" + c + "' p='0'></div>" +
+                    "<div class='spot' r='" + r + "' c='" + c + "' p='0' ud='" + (ud++) + "' ld='" + (ld--) + "'></div>" +
                 "</div>";
         }
         spotString += "</div>";
@@ -88,7 +91,8 @@ $('.spot').click(
                 }
             );
             $('.spot[r=' + nextRow + '][c=' + colClicked + ']').attr('p',(turn%2)+1);
-            dropSpots.removeClass(nextClass);console.log(spotTokens);
+            dropSpots.removeClass(nextClass);
+            console.log(spotTokens);
         }
     }
 
@@ -121,117 +125,34 @@ $('.column').hover(
 function winner(currentSpot){
     var r = parseInt(currentSpot.attr('r'),10);
     var c = parseInt(currentSpot.attr('c'),10);
-    var currentClass = currentSpot.attr("class");
-    console.log(r + "," + c + " | " + currentClass);
+    var ud = parseInt(currentSpot.attr('ud'),10);
+    var ld = parseInt(currentSpot.attr('ld'),10);
     
-    var cont=true;
-    var currentColumn = c;
-    var numSame=1;
-    //check row going right
-    while(cont && ++currentColumn<=6){
-        if($('.chip[r=' + r + '][c=' + currentColumn + ']').attr('class')===currentClass)
-            numSame++;
-        else
-            cont=false;
-        console.log(cont + " " + currentColumn + " " + numSame);
+    var allInRow = $('.spot[r=' + r + ']');
+    var numSame = longestConsecutive(allInRow,currPlayer,"c",1);
+    
+    if(numSame<4){
+        var allInCol = $('.spot[c=' + c + ']');
+        numSame = longestConsecutive(allInCol,currPlayer,"r",-1);
     }
     
-    //if didn't win, check row going left
     if(numSame<4){
-        cont = true;
-        currentColumn = c;
-        
-        while(cont && --currentColumn>=0){
-            if($('.chip[r=' + r + '][c=' + currentColumn + ']').attr('class')===currentClass)
-                numSame++;
-            else
-                cont=false;
-            console.log(cont + " " + currentColumn + " " + numSame);
-        }
+        var allInDiag = $('.spot[ud=' + ud + ']');
+        numSame = longestConsecutive(allInDiag,currPlayer,"r",1);
     }
     
-    //if didn't win, check column going down
     if(numSame<4){
-        numSame = 1;
-        cont = true;
-        var currentRow = r;
-            
-        while(cont && --currentRow>=0){
-            if($('.chip[r=' + currentRow + '][c=' + c + ']').attr('class')===currentClass)
-                numSame++;
-            else
-                cont=false;
-            console.log(cont + " " + currentRow + " " + numSame);
-        }
-    }
-    
-    //if didn't win, check bottom-left to top-right
-    if(numSame<4){
-        numSame = 1;
-        cont = true;
-        currentRow = r;
-        currentColumn = c;
-            
-        while(cont && ++currentRow<=5 && ++currentColumn<=6){
-            if($('.chip[r=' + currentRow + '][c=' + currentColumn + ']').attr('class')===currentClass)
-                numSame++;
-            else
-                cont=false;
-            console.log(cont + " " + currentRow + " " + numSame);
-        }
+        var allInDiag = $('.spot[ld=' + ld + ']');
+        numSame = longestConsecutive(allInDiag,currPlayer,"r",-1);
     }
 
-        
-    //if did not win, check top-right to bottom-left
-    if(numSame<4){
-        cont = true;
-        currentRow = r;
-        currentColumn = c;
-            
-        while(cont && --currentRow>=0 && --currentColumn>=0){
-            if($('.chip[r=' + currentRow + '][c=' + currentColumn + ']').attr('class')===currentClass)
-                numSame++;
-            else
-                cont=false;
-            console.log(cont + " " + currentRow + " " + numSame);
-        }
-    }
-    
-    //if didn't win, check bottom-right to top-left
-    if(numSame<4){
-        numSame = 1;
-        cont = true;
-        currentRow = r;
-        currentColumn = c;
-            
-        while(cont && ++currentRow<=5 && --currentColumn>=0){
-            if($('.chip[r=' + currentRow + '][c=' + currentColumn + ']').attr('class')===currentClass)
-                numSame++;
-            else
-                cont=false;
-            console.log(cont + " " + currentRow + " " + numSame);
-        }
-    }
-        
-    //if did not win, check top-left to bottom-right
-    if(numSame<4){
-        cont = true;
-        currentRow = r;
-        currentColumn = c;
-            
-        while(cont && --currentRow>=0 && ++currentColumn<=6){
-            if($('.chip[r=' + currentRow + '][c=' + currentColumn + ']').attr('class')===currentClass)
-                numSame++;
-            else
-                cont=false;
-            console.log(cont + " " + currentRow + " " + numSame);
-        }
-    }
     return numSame >= 4;
 }
 
-function longestConsecutive(collection, player, attribute,order){
+function longestConsecutive(collection, player, attribute, order){
+    console.log("collectionAll: " + collection.length);
     var classInRow = collection.filter("[p=" + player + "]");
+    console.log("collectionPlayer: " + classInRow.length);
     var tokenArray = [];
     
     classInRow.each(
@@ -274,6 +195,8 @@ $('#restart').click(
         chip.removeClass('p1');
         chip.removeClass('p2');
         spot.attr('p',0);
+        clickable = true;
+        currPlayer = 1;
     }
 );
 

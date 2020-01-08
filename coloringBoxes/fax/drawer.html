@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Human Fax</title>
+    <link rel='stylesheet' href='pixels.css'>
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Righteous|VT323" rel="stylesheet">
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</head>
+<body>
+    <div class='title'>Human Fax</div>
+    <div id='contentWrapper'>
+        <div id='gridWrapper'>
+            <div id='modeSelector'>
+                Free:<input type='radio' name='mode' checked value='0'>
+                Guess:<input type='radio' name='mode' value='1'>
+            </div>
+            <table id='gridContent'></table>
+            <div id='bottomWrapper'>
+                <div id='toggleWrapper'>
+                    <div id='puzzleName'><span id="puzzleNumber"></span>Puzzle by <span id='author'></span></div>
+                    <div id='arrowWrapper'>
+                        <div class='arrowButton' direction='-1'>&larr;</div>
+                        <div class='arrowButton' direction='1'>&rarr;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='export'>EXPORT</div>
+    </div>
+</body>
+<script src='puzzles.js'></script>
+<script src='drawer.js'></script>
+</html>
