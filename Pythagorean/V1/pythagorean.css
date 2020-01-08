@@ -1,0 +1,56 @@
+@CHARSET "UTF-8";
+
+body{
+    text-align:center;
+}
+
+.title{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 40px;
+}
+
+#bigContainer{
+    position:relative;
+    display: inline-block;
+}
+
+input{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 12px;
+    height: 32px;
+    width: 100px;
+    background-color: white;
+    position: absolute;
+    text-align: right;
+    font-size: 28px;
+    padding: 2px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+img{
+    height: 500px;
+}
+
+#a{
+    border-color:#00bff3;
+    top: 230px;
+    left: 16px;
+}
+
+#b{
+    border-color:#0045f3;
+    top: 390px;
+    left: 173px;
+}
+
+#c{
+    border-color:#f93232;
+    top: 140px;
+    left: 240px;
+}

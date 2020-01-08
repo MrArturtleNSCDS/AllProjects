@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+body{
+    background-color: #060;
+}
+
+#outer{
+    width: 700px;
+    height: 400px;
+    background-color: #222;
+    border: 4px solid #fff;
+    border-radius: 40px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#inner{
+    width: 500px;
+    height: 200px;
+    background-color: #060;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+#finishLine{
+    width: 40px;
+    height: 120px;
+    font-size: 0;
+    position: absolute;
+    left: 210px;
+    top: 309px;
+}
+
+.checker{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+
+.black{
+    background-color: black;
+}
+
+.white{
+    background-color: white;
+}
+
+.car{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#car1{
+    background-image: url('images/redRacer.png');
+    left: 100px;
+    top: 320px;
+}
+
+#car2{
+    background-image: url('images/greenRacer.png');
+    left: 100px;
+    top: 360px;
+}
+
+button{
+    background-color: #f90;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px auto;
+    display:block;
+    cursor: pointer;
+}
+
+select{
+    display: block;
+    margin: 0 auto;
+}

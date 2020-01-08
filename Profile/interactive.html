@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Macondo" rel="stylesheet">
+    <link href="static.css" rel="stylesheet">
+    <style>
+        
+        /* styles all images */
+        img{
+            height: 300px;
+            vertical-align: top;
+        }
+        
+        .contentTitle{
+            font-family: 'Aldrich';
+            font-size: 40px;
+        }
+        
+        .buttonWrapper{
+            /*width: 400px;*/
+            text-align: center;
+        }
+        
+        .button{
+            display: inline-block;
+            border: 2px outset #0a0;
+            background-color: #080;
+            /*width: 100px;*/
+            color: #fff;
+            padding: 4px;
+            margin: 4px;
+            border-radius: 12px;
+            font-family: 'Aldrich', sans-serif;
+        }
+        
+        .button:hover{
+            border: 2px inset #0a0;
+            background-color: #0d0;
+            cursor: pointer;
+            color: #000;
+        }
+    </style>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+</head>
+<body>
+    <div class='mainTitle'>
+        <img id='profilePhoto' src='images/SelfieSm.jpg'>
+        Mr. Turtle
+    </div>
+    <div class='favoriteContainer'>
+        <div class='containerTitle'>Favorite Books</div>
+        <img src='images/theGiver.jpg' />
+        <div class='contentWrapper'>    
+            <div class='contentTitle'>The Giver</div>
+        </div>
+        <div class='buttonWrapper'>
+            <div id='flash' class='button' src='theGiver.jpg'>The Giver</div>
+            <div id='cow' class='button' src='theOdyssey.jpg'>The Odyssey</div>
+            <div id='goat' class='button' src='murderOfRoger.jpg'>Murder of Roger Ackroyd</div>
+            <div id='pig' class='button' src='speckledBand.jpg'>The Speckled Band</div>
+        </div>
+    </div>
+    <div class='favoriteContainer'>
+        <div class='containerTitle'>Favorite Shows</div>
+        <img src='images/flashSm.jpg' />
+        <div class='contentWrapper'>    
+            <div class='contentTitle'>The Flash</div>
+        </div>
+        <div class='buttonWrapper'>
+            <div id='flash' class='button' src='flashSm.jpg'>The Flash</div>
+            <div id='cow' class='button' src='greenArrowSm.jpg'>Arrow</div>
+            <div id='goat' class='button' src='legends.jpg'>Legends of Tomorrow</div>
+            <div id='pig' class='button' src='strangerThings.png'>Stranger Things</div>
+        </div>
+    </div>
+</body>
+<script src='interactive.js'></script>
+</html>

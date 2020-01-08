@@ -1,0 +1,65 @@
+@CHARSET "UTF-8";
+
+body{
+    font-family: 'Macondo';
+    color: white;
+    background-color: #000;
+}
+
+.mainTitle{
+    background-color: #400;
+    border-radius: 8px;
+    font-size: 24px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+
+.mainTitle img{
+    margin-left: -8px;
+    margin-top: -8px;
+    max-height: 150px;
+    border-radius: 50%;
+}
+
+.favoriteContainer{
+    background-color: #800;
+    border: 2px solid #200;
+    color: white;
+    margin: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.contentWrapper{
+    width: 25%;
+    display: inline-block;
+}
+
+.containerTitle{
+    background-color: #400;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    border-bottom-right-radius: 8px;
+    font-family: 'Poiret One', cursive;
+    min-width: 200px;
+    margin-bottom: 5px;
+}
+.containerContent{
+    padding: 10px;
+}
+
+.containerImages{
+    display: inline-block;
+    font-size: 0;
+    text-align: right;
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+img{
+    max-height: 100%;
+}

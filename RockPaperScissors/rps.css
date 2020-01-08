@@ -1,0 +1,115 @@
+@CHARSET "UTF-8";
+
+body{
+    background-color: #333;
+}
+
+.title{
+    font-family: 'Black And White Picture';
+    font-size: 48px;
+    text-align: center;
+    color: #fff;
+}
+
+#contentWrapper{
+    width: 600px;
+    height: 400px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 8px solid #000;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+#choicesWrapper{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #080;
+    width: 100%;
+    height: 120px;
+    transition: all .2s ease-in-out;
+}
+
+[choice]{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    margin: 0 auto;
+    transition: all .2s ease-in-out;
+}
+
+[choice]:hover{
+    transform: scale(1.5);
+    filter: saturate(7); 
+}
+
+#cpu{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 5px;
+    left: 200px;
+    background-image: url('images/robotArm_.png');
+    z-index: 200;
+}
+
+#rock{
+    background-image: url('images/rock.png');
+    left: 20%;
+}
+
+#paper{
+    background-image: url('images/paper.png');
+    left: 20%;
+    right: 20%;
+}
+
+#scissors{
+    background-image: url('images/scissors.png');
+    right: 20%
+}
+
+#modalWrapper{
+    /*background-color: rgba(0,0,0,.4);*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: 100;
+    display:none;
+}
+
+.faded{
+    opacity: .3;
+}
+
+#modal{
+    position: absolute;
+    width:207px;
+    height: 150px;
+    background-image: url('images/speechBubble.png');
+    font-family: 'Short Stack';
+    font-size: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 30px;
+    padding-top: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#preloader{
+    display: none;
+}
