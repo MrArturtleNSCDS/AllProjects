@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+
+body {
+  margin-top: 10px;
+  background: #282828;
+  text-align: center;
+  color: #ccc;
+  font-family: sans-serif;
+}
+
+.element{
+    stroke:#88ce02;
+    stroke-width:4px;
+    fill:none;
+}
+
+.st1{
+    font-family:Arial;
+    font-size:12;
+    fill:#fff;
+}
+
+.rule {
+    fill:none;
+    stroke:#d3d3d3;
+    stroke-width:1px;
+}
+
+svg {
+  margin-bottom:10px;
+  background:#1d1d1d;
+  width:600px;
+  height:207px;
+}
