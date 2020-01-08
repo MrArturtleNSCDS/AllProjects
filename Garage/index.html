@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Gallery</title>
+    <link href='cars.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+</head>
+<body>
+    <div class='title'>Ferrari F12</div>
+    <div id='garageWrapper'>
+        <img id='car' src='cars/f12Black.png' alt='car'>
+        <div id='inputWrapper'>
+            <select id='model'>
+                <option value='f12'>Ferrari F12</option>
+                <option value='huracan'>Lamborghini-Huracan</option>
+            </select>
+            <select id='color'>
+                <option value='Black'>Black</option>
+                <option value='Blue'>Blue</option>
+                <option value='Gray'>Gray</option>
+                <option value='Green'>Green</option>
+                <option value='Orange'>Orange</option>
+                <option value='Red'>Red</option>
+                <option value='Teal'>Teal</option>
+                <option value='Yellow'>Yellow</option>
+            </select>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script src='cars.js'></script>
+</html>

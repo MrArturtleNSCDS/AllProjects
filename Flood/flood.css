@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+body{
+    background-color: #222;
+    color: #fff;
+}
+
+
+#contentArea{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#choiceWrapper{
+    padding: 10px;
+    text-align: center;
+}
+
+.choiceBox{
+    display: inline-block;
+    margin: 10px;
+    font-family: Orbitron;
+    font-size: 18px;
+}
+
+select{
+
+}
+
+#gridWrapper{
+    border: 2px solid #000;
+    position:relative;
+}
+
+#message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    font-family: 'Bungee Inline';
+    font-size: 40px;
+    width: 70%;
+    background-color: rgba(0,0,0,.6);
+    padding: 20px;
+    border-radius: 10px;
+    text-align:center;
+}
+
+.block{
+    position: absolute;
+    text-align: center;
+    color: #ccc;
+}
+
+#counterWrapper{
+    text-align: center;
+    font-family: Orbitron;
+    font-size: 40px;
+    margin: 10px;
+}
+
+#counterLabel{
+    height: 46px;
+    display: inline-block;
+    line-height: 56px;
+    overflow: hidden;
+}
+
+#counter{
+    font-family: 'Bungee Inline';
+    border-radius: 50%;
+    border: 3px solid #0a0;
+    background-color: #00a;
+    color:#fff;
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    line-height: 40px;
+    font-size: 24px;
+    box-sizing: border-box;
+    overflow: hidden;
+}

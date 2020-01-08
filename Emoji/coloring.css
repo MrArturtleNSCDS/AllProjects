@@ -1,0 +1,73 @@
+@CHARSET "UTF-8";
+
+/* Emoji */
+
+#grid{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #000;
+}
+
+.pixel{
+    border: 1px solid #ddd;
+    background-color: #fff;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#colorPalette{
+    padding: 10px;
+    background-color: black;
+    display: inline-block;
+}
+
+.colorBox{
+    width: 61px;
+    height: 61px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#color1{
+    background-color: blue;
+}
+
+#color2{
+    background-color: red;
+}
+
+#color3{
+    background-color: yellow;
+}
+
+#color4{
+    background-color: orange;
+}
+
+#color5{
+    background-color: lime;
+}
+
+#color6{
+    background-color: purple;
+}
+
+#color7{
+    background-color: #cf0;
+}
+
+#color8{
+    background-color: #08c;
+}
+
+#color9{
+    background-color: white;
+}
+
+#color10{
+    background-color: black;
+    /*border: 1px solid #888;*/
+}
+
+

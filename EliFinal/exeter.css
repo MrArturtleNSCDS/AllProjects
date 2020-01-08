@@ -1,0 +1,106 @@
+@CHARSET "UTF-8";
+
+/*font-family: 'Prosto One', cursive;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Love Ya Like A Sister', cursive;
+font-family: 'Chelsea Market', cursive;*/
+
+body{
+    background-color: #444;
+    text-align: center;
+}
+
+#bandTitle{
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    font-size: 50px;
+    color: #888;
+}
+
+#bandInfoWrapper{
+    width: 800px;
+    height: 400px;
+    background-color: #fff;
+    border: 2px inset #222;
+    display: inline-block;
+    border-radius: 12px;
+    position: relative;
+}
+
+#bandPic{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #aaa;
+    background: url('images/Guitar.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#memberTitle{
+    font-size: 30px;
+    text-align: left;
+    background-color: #866;
+    width: 200px;
+    position: absolute;
+    left: 240px;
+    top: 20px;
+    padding: 5px 20px;
+    border-top-left-radius: 40px; 
+    border-bottom-right-radius: 40px; 
+    font-family: 'Cabin Sketch', cursive;
+    color: #fff;
+}
+
+#memberSubTitle{
+    font-size: 20px;
+    text-align: left;
+    width: 200px;
+    position: absolute;
+    left: 240px;
+    top: 60px;
+    padding: 5px 20px;
+    border-top-left-radius: 40px; 
+    border-bottom-right-radius: 40px; 
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+#memberInfoBox{
+    width: 540px;
+    height: 230px;
+    position: absolute;
+    left: 240px;
+    top: 90px;
+    background-color: #eee;
+    text-align:left;
+    font-family: 'Prosto One', cursive
+}
+
+#buttonWrapper{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.button{
+    display: inline-block;
+    padding: 5px;
+    width: 100px;
+    border: 1px outset #000;
+    background-color: #555;
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Chelsea Market', cursive;
+}
+
+.button:hover{
+    background-color: #aaa;
+    color:#555;
+}
+
+.memberInfo{
+    display:none;
+}
+

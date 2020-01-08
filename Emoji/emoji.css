@@ -1,0 +1,175 @@
+@CHARSET "UTF-8";
+body{
+    background-color: #333;
+}
+#face{
+    background-color:#fd0;
+    width: 300px;
+    height:300px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+}
+.eye{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color:#fff;
+    position: absolute;
+    top: 50px;
+}
+.brow{
+    
+}
+#leftBrow{
+    
+}
+#rightBrow{
+    
+}
+.pupil{
+    background: url('images/pupilGreen.png') no-repeat center center;
+    background-size:contain;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+#leftEye{
+    left: 80px;
+}
+#rightEye{
+    right: 80px;
+}
+#mouth{
+    background: url('images/mouth2.png') no-repeat center center;
+    background-size:contain;
+    width:200px;
+    height:150px;
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+}
+#tongue{
+    background: url('images/tongue1.png') no-repeat center center;
+    background-size:contain;
+    width:80px;
+    height:80px;
+    position: absolute;
+    right: 60px;
+    bottom: -10px;
+}
+
+#colorPalette{
+    padding: 10px;
+    background-color: #880;
+    display: inline-block;
+}
+
+.colorBox{
+    width: 61px;
+    height: 61px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.pupilImage,.mouthImage{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:contain;
+    display: inline-block;
+}
+
+.pupilImage{
+    width: 40px;
+    height: 40px;
+}
+
+#pupilGreen{
+    background-image: url('images/pupilGreen.png');
+}
+
+#pupilBrown{
+    background-image: url('images/pupilBrown.png');
+}
+
+#pupilCyan{
+    background-image: url('images/pupilCyan.png');
+}
+
+#pupilBlue{
+    background-image: url('images/pupilBlue.png');
+}
+
+#pupilGoogle{
+    background-image: url('images/pupilGoogle.png');
+}
+
+.mouthImage{
+    width: 80px;
+    height: 40px;
+}
+
+#mouth1{
+    background-image: url('images/mouth1.png');
+}
+
+#mouth1Sad{
+    background-image: url('images/mouth1Sad.png');
+}
+
+#mouth2{
+    background-image: url('images/mouth2.png');
+}
+
+#mouth2Sad{
+    background-image: url('images/mouth2Sad.png');
+}
+
+#mouth3{
+    background-image: url('images/mouth3.png');
+}
+
+#color1{
+    background-color: blue;
+}
+
+#color2{
+    background-color: red;
+}
+
+#color3{
+    background-color: yellow;
+}
+
+#color4{
+    background-color: orange;
+}
+
+#color5{
+    background-color: lime;
+}
+
+#color6{
+    background-color: purple;
+}
+
+#color7{
+    background-color: #cf0;
+}
+
+#color8{
+    background-color: #08c;
+}
+
+#color9{
+    background-color: white;
+}
+
+#color10{
+    background-color: black;
+    /*border: 1px solid #888;*/
+}

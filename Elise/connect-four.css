@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+
+
+.board{
+    width:700px;
+    height:620px;
+    background-color:#018bd2;    
+    position:absolute;
+}
+.circle{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    display:inline-block;
+    background-color:white;
+   
+}
+.token{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    position:absolute;
+}
+.yellow{
+    background-color:yellow;
+    display:none;
+}
+.red{
+    background-color:red;
+    display:none;
+}

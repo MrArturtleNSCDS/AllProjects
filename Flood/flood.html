@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel='stylesheet' href='flood.css'>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Orbitron" rel="stylesheet">
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+</head>
+<body>
+    <div id='contentArea'>
+        <div id='choiceWrapper'>
+            <div id='sizeChoice' class='choiceBox'>
+                <label for='sizeSelect'>Size:</label>
+                <select id='sizeSelect'>
+                    <option value='10'>10x10</option>
+                    <option value='12'>12x12</option>
+                    <option value='15'>15x15</option>
+                    <option value='20'>20x20</option>
+                    <option value='25'>25x25</option>
+                </select>
+            </div>
+            <div id='colorChoice' class='choiceBox'>
+                <label for='colorSelect'>Colors:</label>
+                <select id='colorSelect'>
+                    <option value='3'>3</option>
+                    <option value='4'>4</option>
+                    <option value='5'>5</option>
+                    <option value='6'>6</option>
+                    <option value='7'>7</option>
+                    <option value='8'>8</option>
+                </select>
+            </div>
+        </div>
+        <div id='gridWrapper'>
+            <div id='grid'></div>
+            <div id='message'>You're DONE!</div>
+        </div>
+        <div id='counterWrapper'>
+            <div id='counterLabel'>Clicks:</div> <div id='counter'></div>
+        </div>
+    </div>
+</body>
+<script src='floodV2.js'></script>
+</html>
