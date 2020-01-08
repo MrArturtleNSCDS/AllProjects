@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel='stylesheet' href='tictactoe.css'>
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+</head>
+<body>
+    <div id='board'>
+        <div class='spot' r='0' c='0' d1='1' clickable='1'>
+            <div class='x'>
+                <div class='diagonal diag1'></div>
+                <div class='diagonal diag2'></div>
+            </div>
+            <div class='o'></div>
+        </div>
+        <div class='spot' r='0' c='1' clickable='1'>
+            <div class='x'>
+                <div class='diagonal diag1'></div>
+                <div class='diagonal diag2'></div>
+            </div>
+            <div class='o'></div>
+        </div>
+        <div class='spot' r='0' c='2' d2='1' clickable='1'>
+            <div class='x'>
+                <div class='diagonal diag1'></div>
+                <div class='diagonal diag2'></div>
+            </div>
+            <div class='o'></div>
+        </div>
+        <div class='spot' r='1' c='0' clickable='1'>
+            <div class='x'>
+                <div class='diagonal diag1'></div>
+                <div class='diagonal diag2'></div>
+            </div>
+            <div class='o'></div>
+        </div>
+        <div class='spot' r='1' c='1' d1='1' d2='1' clickable='1'>
+            <div class='x'>
+                <div class='diagonal diag1'></div>
+                <div class='diagonal diag2'></div>
+            </div>
+            <div class='o'></div>
+        </div>
+        <div class='spot' r='1' c='2' clickable='1'>
+            <div class='x'>
+                <div class='diagonal diag1'></div>
+                <div class='diagonal diag2'></div>
+            </div>
+            <div class='o'></div>
+        </div>
+        <div class='spot' r='2' c='0' d2='1' clickable='1'>
+            <div class='x'>
+                <div class='diagonal diag1'></div>
+                <div class='diagonal diag2'></div>
+            </div>
+            <div class='o'></div>
+        </div>
+        <div class='spot' r='2' c='1' clickable='1'>
+            <div class='x'>
+                <div class='diagonal diag1'></div>
+                <div class='diagonal diag2'></div>
+            </div>
+            <div class='o'></div>
+        </div>
+        <div class='spot' r='2' c='2' d1='1' clickable='1'>
+            <div class='x'>
+                <div class='diagonal diag1'></div>
+                <div class='diagonal diag2'></div>
+            </div>
+            <div class='o'></div>
+        </div>
+    </div>
+    <div id='winner'></div>
+</body>
+<script src='tictactoe.js'></script>
+</html>

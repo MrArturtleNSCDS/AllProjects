@@ -4,10 +4,14 @@ html,body{
     height: 100%;
 }
 
+body{
+    background: url('images/nscdsLogoTr.png') no-repeat center center;
+    font-family: 'Pangolin';
+}
+
 #board{
-    width: 320px;
-    height: 320px;
-    background-color: #000;
+    width: 604px;
+    height: 604px;
     font-size: 0;
     margin: 0 auto;
     position: relative;
@@ -15,7 +19,7 @@ html,body{
     transform: translateY(-50%);
 }
 
-#modal{
+#modalWrapper{
     display: none;
     background-color: rgba(0,0,0,.6);
     position: absolute;
@@ -25,44 +29,59 @@ html,body{
     height: 100%;
 }
 
-#textWrapper{
+#modal{
     width:261px;
-    height: 128px;
-    line-height: 128px;
-    text-align:center;
-    background: url('images/fancyGreenBack.png') no-repeat center center;
-    color: white;
-    font-family: 'Pangolin';
-    font-size: 32px;
     margin: 0 auto;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
+#textWrapper{
+    height: 128px;
+    line-height: 128px;
+    text-align:center;
+    background: url('images/fancyGreenBack.png') no-repeat center center;
+    color: white;
+    font-size: 32px;
+}
+
 .spot{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     display: inline-block;
-    background-color: #fff;
     font-size: 0;
 }
 
+#restart{
+    padding:5px;
+    border:2px solid #c35;
+    background-color: #27a;
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align:center;
+    bottom: 40px;
+}
+
 .mLeft{
-    margin-left: 10px;
+    border-left: 2px solid #000;
 }
 
 .mTop{
-    margin-top: 10px;
+    border-top: 2px solid #000;
 }
 
 .marker{
     width:100%;
     height: 100%;
-    background-size: 90% 90%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     cursor: pointer;
+    transition: background-image .5s;
 }
 
 .x{
@@ -71,4 +90,20 @@ html,body{
 
 .o{
     background-image: url('images/o.png');
+}
+
+.dog{
+    background-image: url('images/dogSm.png');
+}
+
+.cat{
+    background-image: url('images/catSm.png');
+}
+
+.cubs{
+    background-image: url('images/cubsSm.png');
+}
+
+.sox{
+    background-image: url('images/soxSm.png');
 }

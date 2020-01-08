@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+#board{
+    width:428px;
+    height: 428px;
+    background-color:#000;
+}
+.spot{
+    width:140px;
+    height:140px;
+    background-color: #fff;
+    display:inline-block;
+    cursor: pointer;
+    position: relative;
+}
+.o{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 20px solid #f90;
+    position: absolute;
+    display:none;
+}
+.x{
+    position:absolute;
+    display:none;
+}
+
+.diagonal{
+    width:20px;
+    height: 140px;
+    background-color: #800;
+    position:absolute;
+    left:60px;
+}
+
+.diag1{
+    transform: rotate(45deg);
+}
+.diag2{
+    transform: rotate(-45deg);
+}
+
+#winner{
+    font-family:'Cabin sketch';
+    font-size: 48px;
+    width: 428px;
+    text-align: center;
+}
