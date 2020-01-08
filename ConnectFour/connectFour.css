@@ -1,0 +1,80 @@
+@CHARSET "UTF-8";
+body{
+    background-color: #888;
+}
+#board{
+    width: 560px;
+    height: 480px;
+    background-color: #f90;
+    overflow: hidden;
+    font-size:0;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+.column{
+    width: 80px;
+    height: 100%;
+    float:left;
+}
+.spot{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #c60;
+    float:left;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid #c97602;
+    border-style: groove ridge ridge groove;
+}
+.p1{
+    background: url('images/nscdsLogoPurpleWhite.png') no-repeat center center;
+    background-size: 70px 70px;
+    
+}
+.p2{
+    background: url('images/nscdsLogoWhitePurple.png') no-repeat center center;
+    background-size: 70px 70px;
+}
+
+#modalWrapper{
+    display: none;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+
+#modal{
+    width:261px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#textWrapper{
+    height: 128px;
+    line-height: 128px;
+    text-align:center;
+    background: url('images/fancyGreenBack.png') no-repeat center center;
+    color: white;
+    font-size: 32px;
+}
+
+#restart{
+    padding:5px;
+    border:2px solid #c35;
+    background-color: #27a;
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align:center;
+    bottom: 40px;
+}

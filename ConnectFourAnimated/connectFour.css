@@ -1,0 +1,165 @@
+@CHARSET "UTF-8";
+
+:root{
+    --purple1:#423162;
+    --purple2:#6c519d;
+    --purple3:#8c62d6;
+}
+
+body{
+    background: var(--purple1) url('images/nscdsLogoTr150px.png');
+    font-family: 'Wallpoet';
+}
+
+.titleWrapper{
+    position:relative;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.title{
+    color: #fff;
+    font-size: 72px;
+    height: 76px;
+    line-height: 76px;
+    padding: 0 60px 0 10px;
+    border-radius: 42px;
+    border: 4px inset #000;
+    background-color: #a00;
+}
+
+.subTitle{
+    font-size: 100px;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 60px;
+    border: 4px outset #a00;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    position:absolute;
+    right: -60px;
+    top: -22px;
+}
+
+#boardWrapper{
+    position:relative;
+    background-color:#f90;
+    margin: 10px auto;
+    font-size:0;
+    width: 580px;
+    height: 500px;
+    border-radius: 8px;
+}
+
+.dropSpot{
+    width: 80px;
+    height: 80px;
+    float:left;
+}
+
+#boardTop{
+    padding: 10px;
+    position: absolute;
+    top: -90px;
+    left: 0;
+}
+
+#board{
+    width: 560px;
+    height: 480px;
+    background-color: #b36a07;
+    overflow: hidden;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#boardFront{
+    width: 560px;
+    height: 480px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.column{
+    width: 80px;
+    height: 100%;
+    float:left;
+}
+
+.boardTile{
+    width: 80px;
+    height: 80px;
+    background: url('images/boardTile.png');
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.spot{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #c97602;
+    border-style: groove ridge ridge groove;
+    box-sizing: border-box;
+}
+
+.chip{
+    width: 80px;
+    height: 80px;
+    float:left;
+}
+
+.p1{
+    background: url('images/nscdsLogoPurpleWhite.png') no-repeat center center;
+    background-size: contain;
+    
+}
+.p2{
+    background: url('images/nscdsLogoWhitePurple.png') no-repeat center center;
+    background-size: contain;
+}
+
+#modalWrapper{
+    display: none;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+
+#modal{
+    width:261px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#textWrapper{
+    height: 128px;
+    line-height: 128px;
+    text-align:center;
+    background: url('images/fancyGreenBack.png') no-repeat center center;
+    color: white;
+    font-size: 32px;
+}
+
+#restart{
+    padding:5px;
+    border:2px solid #c35;
+    background-color: #27a;
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align:center;
+    bottom: 40px;
+}

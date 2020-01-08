@@ -1,0 +1,94 @@
+@CHARSET "UTF-8";
+
+html,body{
+    height: 100%;
+}
+
+body{
+    background: #095807 url('images/nscdsLogoTr.png') no-repeat center center;
+}
+
+#buttonWrapper{
+    position:absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+.button{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Coda', cursive;
+    font-size: 24px;
+    border-radius: 8px;
+    border:1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#startButton{
+    background-color: #0a0;
+}
+
+#hitButton{
+    background-color: #f90;
+}
+
+#stayButton{
+    background-color: #800;
+}
+
+.playerWrapper{
+    position: absolute;
+}
+
+.cardPlaceHolder{
+    border: 2px solid #fff;
+    border-radius: 4px;
+    width: 150px;
+    height: 208px;
+    display: inline-block;
+}
+
+.playerPoints{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #fff;
+    color: #095807;
+    border-radius: 50%;
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cardsWrapper{
+    display: inline-block;
+    transform: translateY(-4px);
+    margin-left: -10px;
+}
+
+.card{
+    height: 200px;
+    margin-left: -120px;
+    border: 1px solid #aaa;
+    border-radius: 12px;
+}
+
+#dealer{
+    left: 50%;
+    transform: translateX(-75px);
+    top: 10px;
+}
+
+#player0{
+    left: 50%;
+    transform: translateX(-75px);
+    bottom: 70px;
+}

@@ -1,0 +1,82 @@
+@CHARSET "UTF-8";
+
+:root{
+    --purple1:#423162;
+    --purple2:#6c519d;
+    --purple3:#8c62d6;
+    --purple4:#60f;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+}
+
+#board{
+    width: 486px;
+    height: 486px;
+    border: 3px inset var(--purple3);
+    background-color: #fff;
+    margin: 10px auto;
+}
+
+.eaten{
+    width: 486px;
+    height: 45px;
+    border: 3px inset var(--purple3);
+    background-color: #555;
+    margin: 10px auto;
+}
+
+.eaten .checker{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+.spot{
+    width:60px;
+    height:60px;
+    float: left;
+    padding:5px;
+}
+
+.darkSpot{
+    background-color: var(--purple1);
+    cursor:pointer;
+}
+
+.checker{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: inset;
+    border-width: 3px;
+}
+
+.lightChecker{
+    background-color: #ddd;
+}
+
+.checkerSelected1{
+    background-color: #fff;
+    border-color: #fd0;
+}
+
+.darkChecker{
+    background-color: var(--purple2);
+}
+
+.checkerSelected0{
+    background-color: var(--purple3);
+    border-color: #fd0;
+}
+
+.nextSpot{
+    border: 2px dotted #f90;
+}
