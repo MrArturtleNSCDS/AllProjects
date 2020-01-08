@@ -1,0 +1,5 @@
+$('#stayButton').click(
+    function(){
+        dealerTurn();
+    }
+);

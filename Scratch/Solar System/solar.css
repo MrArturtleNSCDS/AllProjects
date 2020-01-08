@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+#sun{
+    position: absolute;
+    left: 50%;
+    top: 50%; /*+100=350 center*/
+    height: 200px;
+    transform: translate(-50%,-50%);
+}
+#planets{
+    position:absolute;
+    width: 1400px;
+    height: 700px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#mercury{
+    width: 20px;
+    position: absolute;
+    left: 690px;
+    top: 215px;
+}
+#orbitMercury{
+    width:250px;
+    height: 250px;
+    left: 575px;
+    top: 225px;
+}
+#venus{
+    width: 70px;
+    position: absolute;
+    left: 665px;
+    top: 115px;
+}
+#orbitVenus{
+    width:400px;
+    height: 400px;
+    left: 500px;
+    top: 150px;
+}
+#earthWrapper{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 660px;
+    top: 10px;
+}
+#earth{
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#earthMoon{
+    position: absolute;
+    width: 10px;
+    left: 35px;
+    top:-5px;
+}
+#orbitEarthMoon{
+    width: 80px;
+    height: 80px;
+}
+#orbitEarth{
+    width:600px;
+    height: 600px;
+    left: 400px;
+    top: 50px;
+}
+#mars{
+    width: 30px;
+    position: absolute;
+    left: 685px;
+    top: -65px;
+}
+#orbitMars{
+    width:800px;
+    height: 800px;
+    left: 300px;
+    top: -50px;
+}
+#jupiter{
+    width: 120px;
+    position: absolute;
+    left: 640px;
+    top: -190px;
+}
+#orbitJupiter{
+    width:1000px;
+    height: 1000px;
+    left: 200px;
+    top: -150px;
+}
+.orbit{
+    position: absolute;
+    border: 1px dashed #444;
+    border-radius: 50%;
+}
+.star{
+    /*background-color: #fff;*/
+    background: url('img/4pointStarW.png') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+}
+img{
+    /*border: 1px solid #fff;*/
+}
+#starWrapper{
+    height: 100%;
+    width: 100%;
+}

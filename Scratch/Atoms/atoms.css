@@ -1,0 +1,93 @@
+@CHARSET "UTF-8";
+
+#atom{
+    position: absolute;
+    left: 350px;
+    bottom: 500px;
+    width: 300px;
+    height: 300px;
+}
+.electron{
+    background: url('img/electron.png');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+}
+
+#nucleusWrapper{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.nucleus{
+    position: absolute;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+.proton{
+    background-image: url('img/proton.png');
+}
+.neutron{
+    background-image: url('img/neutron.png');
+}
+#proton1{
+    top: 0;
+    left:0;
+}
+#proton2{
+    bottom:0;
+    right:0;
+}
+#neutron1{
+    top:0;
+    right:0;
+}
+#neutron2{
+    bottom: 0;
+    left: 0;
+}
+
+.ring{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px dashed #000;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+#ring1{
+    width:50%;
+    height: 50%;
+}
+
+#ring2{
+    width: 75%;
+    height: 75%;
+}
+
+#ring3{
+    width: 100%;
+    height: 100%;
+}
+
+#periodicTable{
+    width: 100%;
+}
+#tableWrapper{
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}

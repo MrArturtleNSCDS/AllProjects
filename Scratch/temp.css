@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+div{
+    background-color: yellow;
+    border-radius: 8px;
+}
+
+.button{
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+
+

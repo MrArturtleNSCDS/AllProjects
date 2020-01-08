@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel='stylesheet' href='solar.css'>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+</head>
+<body>
+    <div id='planets'>
+        <div id='orbitJupiter' class='orbit'></div>
+        <img id='jupiter' src='img/jupiter.png' alt='venus'>
+        <div id='orbitMars' class='orbit'></div>
+        <img id='mars' src='img/mars.png' alt='venus'>
+        <div id='orbitEarth' class='orbit'></div>
+        <div id='earthWrapper'>
+            <div id='orbitEarthMoon' class='orbit'></div>
+            <img id='earthMoon' src='img/moon.png' alt='moon'>
+            <img id='earth' src='img/earth600.png' alt='earth'>
+        </div>
+        <div id='orbitVenus' class='orbit'></div>
+        <img id='venus' src='img/venus.png' alt='venus'>
+        <div id='orbitMercury' class='orbit'></div>
+        <img id='mercury' src='img/mercuryBig.png' alt='venus'>
+    </div>
+    <div id='starWrapper'></div>
+    <img id='sun' src='img/sun600.png' alt='sun'>
+</body>
+<script src='planetMotion.js'></script>
+</html>

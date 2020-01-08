@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+div{
+    width: 60px;
+    
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    border: 2px solid #000;
+    float:left;
+}
