@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PIXELER</title>
+    <style>
+        body{
+            text-align:center;
+        }
+        #allWrapper{
+            display:inline-block;
+            margin: 20px auto;  
+        }
+        #pixelWrapper{
+            width: 320px;
+            height: 320px;
+            border: 2px inset #000;
+        }
+        .pixel{
+            border: 1px solid #fafafa;
+            width: 20px;
+            height: 20px;
+            box-sizing: border-box;
+            float: left;
+            cursor: pointer;
+        }
+        .pixelSelected{
+            border: 2px outset rgba(150,150,150, 0.5);
+        }
+        
+        #availColorWrapper{
+            width: 320px;
+            height: 80px;
+            border: 2px solid #000;
+        }
+        .availColor{
+            width:40px;
+            height: 40px;
+            border: 1px inset #eee;
+            box-sizing: border-box;
+            float: left;
+            cursor: pointer;
+        }
+        .selected{
+            border: 5px outset rgba(150,150,150, 0.5);
+        }
+        
+        
+        [color="1"]{
+            background-color: #a00;
+        }
+        [color="2"]{
+            background-color: #0a0;
+        }
+        [color="3"]{
+            background-color: #00a;
+        }
+        [color="4"]{
+            background-color: white;
+        }
+        [color="5"]{
+            background-color: #fd0;
+        }
+        [color="6"]{
+            background-color: aqua;
+        }
+        [color="7"]{
+            background-color: purple;
+        }
+        [color="8"]{
+            background-color: pink;
+        }
+        [color="9"]{
+            background-color: maroon;
+        }
+        [color="10"]{
+            background-color: cadetblue;
+        }
+        [color="11"]{
+            background-color: coral;
+        }
+        [color="12"]{
+            background-color: deeppink;
+        }
+        [color="13"]{
+            background-color: gray;
+        }
+        [color="14"]{
+            background-color: darkgray;
+        }
+        [color="15"]{
+            background-color: greenyellow;
+        }
+        [color="16"]{
+            background-color: black;
+        }
+        #buttonWrapper{
+            width: 320px;
+            text-align: center;
+        }
+        .button{
+            padding: 5px;
+            background-color: #080;
+            border-radius: 6px;
+            text-align: center;
+            display: inline-block;
+            color: #fff;
+            border:2px outset #090;
+            margin: 4px;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: #0a0;
+            border:2px inset #090;
+        }
+        
+    </style>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+</head>
+<body>
+    <div id='allWrapper'>
+        <div id='pixelWrapper'></div>
+        <div id='availColorWrapper'></div>
+        <div id='buttonWrapper'>
+            <div id='erase' class='button'>ERASE</div>
+            <div id='save' class='button'>SAVE</div>
+            <div id='clear' class='button'>CLEAR</div>
+            <input type="file" id="myFile" multiple size="50">
+        </div>
+    </div>
+</body>
+<script src='fileSaver.min.js'></script>
+<script src='fileSaver.js'></script>
+<script src='fileUploader.js'></script>
+<script src='pixeler.js'></script>
+</html>

@@ -1,6 +1,6 @@
 $('#myButton').click(
     function(){
-        var userName = $('#infoBox').val();
-        $('#result').text("Hello!!!" + userName);
+        var number = $('#lowNum').val();
+        $('#result').text(number);
     }
 );

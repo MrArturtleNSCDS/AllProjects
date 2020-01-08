@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Challenges</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <style>
+        body{
+            background-color: #444;
+            color: #fff;
+            font-size: 20px;
+            font-family: 'Fredoka One';
+        }
+        input{
+            width: 30px;
+            height: 30px;
+            border: 3px dotted #fd0;
+            font-size: 20px;
+            text-align: right;
+            border-radius: 8px;
+            font-family: 'Fredoka One';
+        }
+        div{
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 8px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .result{
+            width: 60px;            
+            border: 3px solid #fd0;
+            background-color: #fff;
+            color: #000;
+        }
+        .button{
+            width: 80px;
+            border: 1px solid #0fd;
+            background-color: #05f;
+            cursor:pointer;
+        }
+        #words{
+            width: 300px;
+            border: 2px solid blue;
+        }
+        #findLongest{
+            width: 60px;
+            
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <input id='sumA' /> + <input id='sumB' /> = <div id='sumTotal' class='result'></div>
+    <div id='sumButton' class='button'>SUM</div>
+    <input id='words' /> <div id='findLongest'></div>
+</body>
+<script src='challenges.js'></script>
+</html>

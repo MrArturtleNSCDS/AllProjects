@@ -1,15 +1,168 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Shapes Challenge</title>
+        <style>
+            body{
+                background-color: #423162;
+            }
+            .shape1{
+                background-color: #ddd;
+                width: 100px;
+                height: 100px;
+                border-radius: 25px;
+                position: relative;
+            }
+            .shape2{
+                background-color: #aaa;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                position: absolute;
+                left: 10px;
+                top: 10px;
+            }
+            .shape3, .shape4{
+                background-color: #000;
+                width: 10px;
+                height: 80px;
+                border-radius: 50%;
+                position: absolute;
+                left: 35px;
+                top: 0;
+            }
+            .shape4{
+                transform: rotate(90deg);
+            }
+            
+            @keyframes rotateFace{
+                from{
+                    transform: rotate(0deg);
+                    left: 0;
+                }
+                to{
+                    transform: rotate(360deg);
+                    left: 628px;
+                }
+            }
+            #face{
+                position: relative;
+                width: 200px;
+                height: 200px;
+                background-color: #ffe600;
+                border-radius : 50%;
+                animation: rotateFace 2s ease 0s infinite alternate;
+            }
+            #leftEye{
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                background-color: #fff;
+                border-radius: 50%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 15px;
+                top: 40px;
+                left: 40px;
+            }
+            #rightEye{
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                background-color: #fff;
+                border-radius: 50%;
+                top: 40px;
+                right: 40px;
+            }
+            
+            @keyframes moveEyes {
+                from {right: 0}
+                to {right: 20px}
+            }
+            
+            #leftPupil{
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-color: #000;
+                border-radius: 50%;
+                top: 10px;
+                right: 0;
+                animation: moveEyes 2s ease 0s infinite alternate;
+            }
+            #rightPupil{
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-color: #000;
+                border-radius: 50%;
+                top: 10px;
+                right: 0;
+                animation: moveEyes 2s ease 0s infinite alternate;
+            }
+            #leftFrame{
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                border: 2px solid #000;
+                border-radius: 50%;
+                top: 28px;
+                left: 28px;
+            }
+             #rightFrame{
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                border: 2px solid #000;
+                border-radius: 50%;
+                top: 28px;
+                right: 28px;
+            }
+            #connectorFrame{
+                position: absolute;
+                background-color: #000;
+                width: 16px;
+                height: 2px;
+                left: 92px;
+                top: 60px;
+            }
+            #mouth{
+                width: 100px;
+                height: 50px;
+                border-bottom: 8px solid #000;
+                /*border-left: 2px solid #000;*/
+                position: absolute;
+                left: 50px;
+                bottom: 20px;
+                border-radius: 50%;
+            }
+        </style>
     </head>
     <body>
-        <div style='background-color:#555;width:500px;height:200px;border:5px dashed #f00'>
-            Bella's birthday is July 7th
-            <div style='background-color:#aaa;width:400px;height:100px;border:5px dashed #f00'></div>
+        <hr />
+        <div class="shape1"></div>
+        <hr />
+        <div class="shape1">
+            <div class="shape2"></div>
         </div>
-        
-        Bella
+        <hr />
+         <div class="shape1">
+            <div class="shape2">
+                <div class="shape3"></div>
+                <div class="shape4"></div>
+             </div>
+        </div>
+        <hr />
+        <div id="face">
+            <div id="leftFrame"></div>
+            <div id="rightFrame"></div>
+            <div id="connectorFrame"></div>
+            <div id="leftEye">
+                <div id="leftPupil"></div>
+            </div>
+            <div id="rightEye">
+                <div id="rightPupil"></div>
+            </div>
+            <div id="mouth"></div>
+        </div>
     </body>
 </html>
-
