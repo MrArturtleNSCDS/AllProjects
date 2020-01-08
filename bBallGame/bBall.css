@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+html,body{
+    height: 100%;
+    text-align: center;
+}
+
+#court{
+    height:80%;
+}
+
+.player{
+    height: 200px;
+}
+
+.playerCard{
+    position: absolute;
+}
+
+.stats{
+    display:none;
+}
+
+#steph{
+    top: 20px;
+    left: 40px;
+}
+
+
+

@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+body{
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+table{
+    border-collapse: collapse;
+    text-align:right;
+}
+
+input{
+    padding: 4px;
+    border: 1px solid #aaa;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    text-align: right;
+    letter-spacing: 3px;
+}
+
+#firstBinary{
+    padding-bottom:0;
+    border-bottom: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#secondBinary{
+    padding-top:0;
+    border-top: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#result{
+    border-top:1px solid #222;
+    letter-spacing: 3px;
+    font-size: 24px;
+    text-align: right;
+    padding-right:5px;
+    box-sizing: border-box;
+}
+
+.decimal{
+    border-left: 1px dotted #888;
+    padding-left: 10px;
+}
+
+.error{
+    background-color: #800;
+    color:#fff;
+}

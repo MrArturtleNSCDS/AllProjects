@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breakout</title>
+    <link rel='stylesheet' href='breakout.css'>
+    <script src='jquery-3.2.1.min.js'></script>
+</head>
+<body>
+    <button>Next Frame</button>
+    <canvas id='main' width='1000' height='600'></canvas>
+    <div id='ballPositionWrapper' class='display'>
+        <div class='title'>Ball Position</div>
+        <div id='ballPosition'>
+            <div id='ballX' class='dataBlock'></div>
+            <div id='ballY' class='dataBlock'></div>
+            <div id='checkBallX' class='dataBlock'></div>
+            <div id='checkBallY' class='dataBlock'></div>
+            <div id='lowAngle' class='dataBlock'></div>
+            <div id='highAngle' class='dataBlock'></div>
+            <div id='finalAngle' class='dataBlock'></div>
+        </div>
+    </div>
+    <div id='insideWrapper' class='display'>
+        <div class='title'>Inside</div>
+        <div id='inside' class='dataBlock'></div>
+        <div id='edges' class='dataBlock'></div>
+    </div>
+    <div id='visibleWrapper' class='display'>
+        <div class='title'>Visible</div>
+        <div id='numVisible' class='dataBlock'></div>
+    </div>
+</body>
+<script src='breakout.js'></script>
+</html>
