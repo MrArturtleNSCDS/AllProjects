@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+
+.bigThing{
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-weight:bold;
+    line-height: 100px;
+    text-align: center;
+    display:inline-block;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.smallThing{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-family: "Kranky";
+    font-size: 40px;
+    overflow: hidden;
+    margin: 25px;
+}
+.color1{
+    background-color: darkgreen;
+}
+.color2{
+    background-color: darkorange;
+}
+.color3{
+    background-color: darkblue;
+}
+.circle{
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#display{
+    width:525px;
+    height:25px;
+    border-radius:10px;
+    border-style: solid;
+    border-color: black;
+    color: white;
+}

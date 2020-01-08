@@ -1,0 +1,46 @@
+@CHARSET "UTF-8";
+
+.bigThing{
+            display:inline-block;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            overflow:hidden;
+            border-radius: 25%;
+}
+.smallThing{
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-family: "Kranky";
+            font-size: 40px;
+            overflow: hidden;
+            margin: 25px;
+            
+            
+}
+.color1{
+    background-color:pink;
+}
+.color2{
+    background-color: #99BADD;
+}
+.color3{
+    background-color:darkblue;
+}
+.circle{
+    border-radius:50%;
+}
+
+#display{
+width:500px;
+height:20px;
+border-radius:10px;
+border-color: black;
+border-style: solid;
+color:white;
+
+}

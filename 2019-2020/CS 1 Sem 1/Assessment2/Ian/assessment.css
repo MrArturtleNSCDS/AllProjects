@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+
+.bigThing{
+width:100px;
+height:100px;
+border-radius:10%;
+text-align:center;
+line-height:50px;
+margin:8px;
+
+}
+
+.smallThing{
+   margin-top:25px;
+   font-family: "Kranky";
+    width:50px;
+    height:50px;
+    overflow:hidden;
+    text-align:center;
+    
+   
+}
+.color1{
+background-color:yellow;
+font-size:50px;
+color:#fff;
+}
+.color2{
+background-color:darkblue;
+font-size:25px;
+color:#fff;
+}
+.color3{
+background-color:darkgreen;
+font-size:25px;
+font:Kranky;
+color:#fff;
+}
+.circle{
+border-radius:50%;
+}
+
+#display{
+display:inline-block;
+}
+
+

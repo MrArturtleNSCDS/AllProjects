@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+.bigThing{
+    width:100px;
+    height:100px;
+    border-radius:12px;
+    text-align: center;
+    line-height: 100px;
+    display:inline-block;
+    overflow: hidden;
+    color: white;
+}
+.smallThing{
+    width: 50px;
+    height: 50px;
+    margin: 25px;
+    font-family: "Kranky";
+    line-height: 50px;
+    color:white;
+    font-size: 30px;
+
+}
+.color1{
+    background-color:darkgreen;
+}
+.color2{
+    background-color: darkblue;
+}
+.color3{
+    background-color: #f90;
+}
+.circle{
+    border-radius: 50%;
+}
+
+#display{
+    
+}
+
