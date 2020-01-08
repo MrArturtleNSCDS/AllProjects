@@ -16,7 +16,7 @@ start.click(
         init();
         active = true;
         $(this).fadeOut();
-        message.fadeIn();
+        message.css('opacity',1);
     }
 );
 
@@ -33,7 +33,7 @@ function pickNextColor(){
     var currentColor = Math.ceil(Math.floor((Math.random() * 400) + 1)/100);
     colorPattern.push(currentColor);
     numClicks = 0;
-    console.log(colorPattern);
+    //console.log(colorPattern);
     lightUpPattern(0);
     clickedPattern = [];
     message.removeClass('on');
@@ -44,7 +44,7 @@ function lightUpPattern(currentBox){
     var activeBox = $('[box=' + colorPattern[currentBox] + ']');
     turnLightOn(activeBox);
     currentBox++;
-    console.log(currentBox + "**" + currentNumColor);
+    //console.log(currentBox + "**" + currentNumColor);
     if(currentBox<currentNumColor){
         //console.log("currentBox:" + currentBox + " currentNumColor:" + currentNumColor);
         setTimeout(
@@ -67,7 +67,7 @@ function turnLightOn(box){
     clickSound.play();
     setTimeout(
         function(){
-            box.removeClass('selected')
+            box.removeClass('selected');
             //console.log('changed back');
         },
         400);
@@ -91,7 +91,7 @@ $('.box').click(
             
             var clickedBox = $(this);
             turnLightOn(clickedBox);
-            console.log(clickedPattern + "||" + numClicks + "||" + currentNumColor);
+            //console.log(clickedPattern + "||" + numClicks + "||" + currentNumColor);
             if(numClicks===currentNumColor){
                 if(isArrayEqual(clickedPattern,colorPattern)){
                     score += numClicks;

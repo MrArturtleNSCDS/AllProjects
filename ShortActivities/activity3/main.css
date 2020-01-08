@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+body{
+    background-color: #444;
+    font-family: "Quicksand";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div{
+    margin: 5px
+}
+
+#display{
+    background-color: #fff;
+    border-radius: 30px;
+    border: 4px inset #000;
+    width: 80%;
+    padding: 30px;
+}
+
+.box{
+    border: 4px dotted #999;
+    padding: 12px;
+    margin: 5px;
+    font-family: "Exo";
+    font-weight: normal;
+    border-radius: 12px;
+}
+
+.activity{
+    border-color: #c44;
+}
