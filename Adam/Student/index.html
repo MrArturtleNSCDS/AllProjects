@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel= 'stylesheet' href= 'wordGuess.css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Gloria+Hallelujah" rel="stylesheet">
+        <title>WordGuess</title>
+    </head>
+    <body>
+        <div id='boxWrapper' class='box'>
+            <div id='box'></div>
+            <div id='numGuesses'></div>
+            <div id='guessedLettersWrapper'>
+                <div id='yesBox' class='guessedLetterBox'></div>
+                <div id='noBox' class='guessedLetterBox'></div>
+            </div>
+            <div id='buttonWrapper'>
+                <div id='freeResponseWrapper'>
+                    <input type="text" id="userInput"></input><button id='submitButton'>Submit</button>
+                </div>
+                <div id='choiceWrapper'>
+                    <button id='yesButton' class='choiceButton'>YES</button>
+                    <button id='noButton' class='choiceButton'>NO</button>
+                </div>
+                <div id='startWrapper'>
+                    <button id='restartButton'>RESTART</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src='wordBank/top5000plus.js'></script>
+    <script src="wordGuess.js"></script>
+</html>

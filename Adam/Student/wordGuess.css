@@ -1,0 +1,112 @@
+@CHARSET "UTF-8";
+body{
+    text-align:center;
+    font-family: 'Noto Sans';
+    background-color: #222;
+}
+
+#boxWrapper{
+    display: inline-block;
+    width: 575px;
+    height:500px;
+    background-color: #fb0;
+    border: 10px;
+    font-family: 'Noto Sans';
+    padding: 20px;
+    text-align: center;
+    border-radius:10px; 
+    position:relative;
+}
+
+#box{
+    
+}
+
+.highlight{
+    
+}
+
+#numGuesses{
+    
+}
+
+#guessedLettersWrapper{
+    
+}
+
+#yesBox{
+    
+}
+
+#noBox{
+    
+}
+
+.guessedLetterBox{
+    
+}
+
+.guessedLetter{
+    
+}
+
+#userInput{
+    text-align: center;
+}
+
+#buttonWrapper{
+    
+}
+
+#choiceWrapper{
+    
+}
+
+#startWrapper{
+    
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button{
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+#submitButton{
+    
+}
+
+#yesButton{
+    
+}
+
+#yesButton:hover{
+    
+}
+
+#noButton{
+    
+}
+
+#noButton:hover{
+    
+}
+
+#restartButton{
+    
+}
+
+#restartButton:hover{
+    
+}
+
+.error{
+    background-color: #800;
+    color: #fff;
+}

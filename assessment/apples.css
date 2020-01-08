@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+div{
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    margin: 5px;
+}
+.box1{
+    background-color:#a00;
+}
+.box2{
+    background-color:#0a0;
+    border-radius: 8px;
+}
+#different{
+    background-color:yellow;
+    border-radius: 12px;
+    color:black;
+    cursor:pointer;
+}
+#different:hover{
+    background-color:orange;
+}

@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+#bigBox{
+    width: 300px;
+    height: 300px;
+    background-color: #007;
+    position: relative;
+}
+
+#smallBox{
+    width: 150px;
+    height: 150px;
+    background-color: #800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#colorWrapper{
+    background-color: #222;
+    padding: 7px;
+    display:inline-block;
+}
+
+.colorBox{
+    display:inline-block;
+    width: 25px;
+    height: 50px;
+}
+
+.color1{
+    background-color: blue;
+}
+
+.color2{
+    background-color: #800;
+}
+
+.color3{
+    background-color: #08c;
+}
+
+.color4{
+    background-color: #f90;
+}
+
+.color5{
+    background-color: #6C519D;
+}
+
+
+

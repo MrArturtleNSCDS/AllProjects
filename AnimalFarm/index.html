@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animals!!</title>
+    <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+    <style>
+        /* changes the background of the whole page */
+        body{
+            background-color: brown;
+        }
+        /* styles all images */
+        img{
+            height: 150px;
+        }
+        
+        .animalWrapper{
+            border: 4px inset yellow;
+            border-radius: 40px;
+            padding: 20px;
+            text-align: center;
+            width: 400px;
+            background-color: #fff;
+        }
+        
+        .buttonWrapper{
+            width: 400px;
+            text-align: center;
+        }
+        
+        .button{
+            display: inline-block;
+            border: 2px outset #0a0;
+            background-color: #080;
+            width: 100px;
+            color: #fff;
+            padding: 4px;
+            margin: 4px;
+            border-radius: 12px;
+            font-family: 'Aldrich', sans-serif;
+        }
+        
+        .button:hover{
+            border: 2px inset #0a0;
+            background-color: #0d0;
+            cursor: pointer;
+            color: #000;
+        }
+    </style>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+</head>
+<body>
+    <div class='animalWrapper'>
+        <img src='cow.png' />
+    </div>
+    <div class='buttonWrapper'>
+        <div id='chicks' class='button'>chicks</div>
+        <div id='cow' class='button'>cow</div>
+        <div id='goat' class='button'>goat</div>
+        <div id='pig' class='button'>pig</div>
+        <div id='rooster' class='button'>rooster</div>
+    </div>
+</body>
+<script src='animal.js'></script>
+</html>

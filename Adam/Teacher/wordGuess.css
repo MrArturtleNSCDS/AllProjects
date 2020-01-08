@@ -1,0 +1,140 @@
+@CHARSET "UTF-8";
+body{
+    text-align:center;
+    font-family: 'Noto Sans';
+    background-color: #222;
+}
+
+#boxWrapper{
+    display: inline-block;
+    width: 575px;
+    height:500px;
+    background-color: #fb0;
+    border: 10px;
+    font-family: 'Noto Sans';
+    padding: 20px;
+    text-align: center;
+    border-radius:10px; 
+    position:relative;
+}
+
+#box{
+    height: 45px;
+    overflow: hidden;
+}
+
+.highlight{
+    background-color: #f90;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#numGuesses{
+    height: 200px;
+    line-height: 200px;
+    font-size: 200px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+#guessedLettersWrapper{
+    width: 100%;
+    height: 200px;
+}
+
+#yesBox{
+    background-color: #080;
+}
+
+#noBox{
+    background-color: #800;
+}
+
+.guessedLetterBox{
+    width: calc(50% - 20px);
+    height: calc(100% - 20px);
+    padding: 18px;
+    margin: 10px;
+    box-sizing: border-box;
+    border: 4px dotted #fff;
+    border-radius: 10px;
+    float:left;
+}
+
+.guessedLetter{
+    width: 31px;
+    height: 31px;
+    line-height: 30px;
+    font-family: "Gloria Hallelujah";
+    font-size: 22px;
+    float:left;
+    background-color: #3097ff;
+    color: #fff;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+#userInput{
+    text-align: center;
+}
+
+#buttonWrapper{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#choiceWrapper{
+    display: none;
+}
+
+#startWrapper{
+    display: none;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button{
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+#submit{
+    background-color: #000;
+}
+
+#yes{
+    background-color: #080;
+}
+
+#yes:hover{
+    background-color: #0a0;
+}
+
+#no{
+    background-color: #800;
+}
+
+#no:hover{
+    background-color: #a00;
+}
+
+#restart{
+    background-color: #f90;
+}
+
+#restart:hover{
+    background-color: #fa0;
+}
+.error{
+    background-color: #800;
+    color: #fff;
+}
