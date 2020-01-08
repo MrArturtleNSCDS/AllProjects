@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Challenges</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <style>
+        /*choose your own color for the body background*/
+        body{
+            font-size: 20px;
+            font-family: 'Fredoka One';
+            background-color: #555;
+        }
+        
+        /* input tags are 30x30 pixels with a 8 pixel rounded dotted border 3 pixels wide
+         * match the font size and font family of the body
+         * note text aligns to the right
+         * colors are up to you*/
+        input{
+            width: 30px;
+            height: 30px;
+            border-radius: 8px;
+            border: 3px dotted #fa0;
+            font-size: 20px;
+            font-family: 'Fredoka One';
+            text-align: right;
+        }
+        
+        /* divs are styled very similarly to the input tags, but the text is center middle */
+        div{
+            display: inline-block;
+            vertical-align: top;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 8px;
+        }
+        
+        /* result is the same height as the other divs, but the width is 60 pixels
+         * note the border is solid*/
+        .result{
+            width: 60px;
+            border: 3px solid #fa0;
+            background-color: white;
+            text-align: center;
+        }
+
+        /* width of the button is 80 pixels */
+        .button{
+            cursor:pointer;
+            width: 80px;
+            background-color: #045;
+            border: 1px solid #078;
+            text-align: center;
+            color: white;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <input id='sumA'></input> + <input id='sumB'></input> = <div id='sumTotal' class='result'></div>
+    <div id='sumButton' class='button'>SUM</div>
+</body>
+<script src='mini-calc.js'></script>
+</html>

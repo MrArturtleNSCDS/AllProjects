@@ -1,0 +1,99 @@
+@CHARSET "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cutive Mono';
+    font-size: 24px;
+}
+
+body{
+    background: #333 url('mathSymbols.png');
+    background-size: 50px;
+    color: #fff;
+    text-align:center;
+}
+
+.stats, .numberBox{
+    display: inline-block;
+}
+
+input{
+    border-width: 2px;
+    border-style: solid;
+    width: 100px;
+    height: 48px;
+    border-radius: 8px;
+    margin: 5px;
+    text-align: right;
+}
+
+#min,#max{
+    border-color: #f60;
+}
+
+table{
+    margin: 5px auto;
+    border: 4px outset #fff;
+    border-radius: 10px;
+    background-color: rgba(0,0,150,.7);
+}
+
+th{
+    font-family: 'Mali';
+}
+
+.numberBox, .stats{
+    padding: 10px;
+}
+
+.stats{
+    border-radius: 4px;
+    margin: 10px;
+    width: 60px;
+    text-align: right;
+}
+
+.given{
+    width: 60px;
+    text-align: center;
+}
+
+#numCorrect{
+    background-color: #0a0;
+}
+
+#numIncorrect{
+    background-color: #800;
+}
+
+#problemWrapper{
+    display:inline-block;
+    padding: 10px;
+    border: 4px outset #fff;
+    border-radius: 10px;
+    background-color: rgba(150,0,0,.7);
+}
+
+#checkButton{
+    font-family: 'Mali';
+    background-color: #36b;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+    margin: 10px;
+}
+
+#checkButton:hover{
+    background-color: #5ae;
+}
+
+#status{
+    margin: 10px;
+    font-family:'Cabin Sketch';
+    font-size: 50px;
+    display:none;
+}
+

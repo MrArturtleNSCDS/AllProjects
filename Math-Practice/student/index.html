@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math Practice</title>
+        <link rel='stylesheet' href='mathPractice.css'>
+    </head>
+    <body>
+        <div>
+            <div id='numCorrect' class='stats'>0</div><div id='numIncorrect' class='stats'>0</div>
+        </div>
+        <table>
+            <tr>
+                <th>min</th>
+                <th>max</th>
+            </tr>
+            <tr>
+                <td><input id='min' type='number' value='0' /></td>
+                <td><input id='max' type='number' value='10' /></td>
+            </tr>
+        </table>
+        
+        <div id='problemWrapper'>
+            <div id='givenA' class='numberBox given'></div>
+            <select id='operation'>
+                <option value='+'>+</option>
+                <option value='-'>-</option>
+            </select>
+            <div id='givenB' class='numberBox given'></div>
+            =
+            <input id='answer' class='numberBox' type='number'>
+        </div>
+        <div id='checkButton'>CHECK</div>
+        <div id='status'></div>
+    </body>
+    <script src='js/mathPractice.js'></script>
+</html>

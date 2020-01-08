@@ -1,0 +1,99 @@
+@CHARSET "UTF-8";
+
+body{
+    font-family: 'Mina';
+    font-size: 18px;
+    background-color: #222;
+}
+
+input{
+    border: 3px inset #fa0;
+    font-family: 'Mina';
+    font-size: 18px;
+    width: 100px;
+    height: 18px;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+div{
+    line-height: 18px;
+    padding: 5px;
+    border: 3px outset #079;
+    margin: 5px;
+    background-color: #fff;
+    min-height: 18px;
+}
+
+.button{
+    background-color: #079;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+    width: 100px;
+}
+
+.button:hover{
+    background-color: #09a;
+}
+
+#result{
+    border-radius: 2px;
+    height: calc(100% - 60px);
+    overflow: auto;
+}
+
+.term{
+    border: 1px dotted #ddd;
+    width: 64px;
+    text-align: center;
+    display:inline-block;
+}
+
+#tableResultWrapper{
+    
+}
+
+.tableResultsLine{
+    border: 1px solid #ddd;
+    margin: 0;
+}
+
+.tableResultsLine div{
+    display:inline-block;
+    border: none;
+}
+
+.tableResultsN,.tableResultsNum{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.tableResultsN{
+    background-color: #0a0;
+}
+
+.tableResultsNum{
+    background-color: #a00;
+}
+
+.tableResultsTerms{
+    width: calc(100% - 120px);
+    font-size: 9px;
+}
+
+.highestTerm{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #008;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0;
+}
