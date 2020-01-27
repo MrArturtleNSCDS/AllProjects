@@ -59,3 +59,30 @@ function showNumbers(min, high){
 * should display 3,7,11
 */
 
+// CHALLENGE 4
+
+/*
+* Given a message, return the message without the vowels.
+* Example:
+*
+* For message = "Hello, how are you?", the output should be
+* noVowels(message) = "Hll, hw r y?";
+*/
+
+function noVowels(message) {
+    var vowels = 'aeiou';
+    var noVowelsString = "";
+
+    for(var i=0; i<message.length; i++){
+        var currLetter = message.charAt(i);
+        if(vowels.indexOf(currLetter)<0)
+            noVowelsString += currLetter;
+    }
+
+    return noVowelsString;
+    
+}
+
+message = "Hello, how are you?";
+console.log(noVowels(message));
+
