@@ -1,0 +1,33 @@
+.box{
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+}
+
+.color1{
+    background-color: orange;
+    color: brown;
+    font-family: "Kranky";
+}
+
+.color2{
+    background-color: blueviolet;
+    color: white;
+}
+
+#display{
+    border: 1px dotted olivedrab;
+    height: 50px;
+    font-family: "Kranky";
+    padding: 4px;
+    font-size: 45px;
+    border-radius: 20px;
+    background-color: #08c;
+    margin-top: 10px;
+    width: 800px;
+    text-align: right;
+}
