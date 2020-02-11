@@ -1,18 +1,18 @@
 console.info("script loaded");
 
-var arr = [4,6,3,4,5,1,8,3,9,3];
+var arr = [7,4,6,0,5,1,8,2,9,3];
 
 function mergeSort(array){
     if (array.length < 2) {
         return array;
     }
 
-    const middle = Math.floor(arr.length / 2);
-    const left = arr.slice(0, middle);
-    const right = arr.slice(middle);
+    const middle = Math.floor(array.length / 2);
+    const left = array.slice(0, middle);
+    const right = array.slice(middle);
 
     console.log(left,right);
-    //return merge(mergeSort(left), mergeSort(right));
+    return merge(mergeSort(left), mergeSort(right));
 }
 
 function merge(left,right){
@@ -25,9 +25,12 @@ function merge(left,right){
       arr.push(right.shift());
     }
   }
+
+  console.log("merging:",arr,left,right);
+
   return arr.concat(left.slice().concat(right.slice()));
 }
 
 
 
-mergeSort(arr);
+console.log(mergeSort(arr));
