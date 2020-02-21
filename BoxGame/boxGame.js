@@ -1,7 +1,6 @@
 console.info("javascript loaded");
 var gameBoard = $("#gameBoard");
 
-
 for(var r=0; r<20; r++){
     if(r%2==0)
         for(var c=0; c<10; c++){
