@@ -1,0 +1,24 @@
+body,html{
+    width: 100px;
+    height: 100px;
+}
+
+#gameBoard{
+    width: 520px;
+    height: 520px;
+    border: 1px dotted #aaa;
+    padding: 10px;
+    background-color: #800;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    float:left;
+    background-color: white;
+    border-radius: 50%;
+}
