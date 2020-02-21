@@ -15,8 +15,12 @@ body{
     transform: translateX(-50%);
 }
 
+#gameButtons{
+    display: none;
+}
+
 .button{
-    width: 100px;
+    width: 120px;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -29,7 +33,7 @@ body{
     display: inline-block;
 }
 
-#startButton{
+[startGame]{
     background-color: #0a0;
 }
 
@@ -91,4 +95,47 @@ body{
     left: 50%;
     transform: translateX(-75px);
     bottom: 70px;
+}
+
+#winnerWrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.3);
+    display: none;
+}
+
+#winnerModal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 375px;
+    height: 267px;
+    background: url("cardPNG/back-90.png") no-repeat;
+    background-size: contain;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 16px;
+}
+
+#innerModal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#message{
+    color: #fff;
+    background-color: rgba(0,0,0,.8);
+    padding: 5px;
+    border-radius: 8px;
+    font-family: Righteous;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
 }
