@@ -1,8 +1,12 @@
 console.info("javascript loaded");
 var gameBoard = $("#gameBoard");
+var leftOver = $("#leftOver");
 var numRows = 10;
 var numCols = 10;
 var numClicks = 0;
+var totalBoxes = 0;
+var playerScores = [0,0];
+var playerDisplays = [$("#score0"),$("#score1")];
 
 for(var r=0; r<numRows*2; r++){
     if(r%2==0){
@@ -23,16 +27,22 @@ for(var r=0; r<numRows*2; r++){
                 var lValue = c<numCols-1?c:-1;
                 var rValue = c>0?c-1:-1;
                 gameBoard.append("<div class='line vLine' l='" + lValue + "' r='" + rValue + "' row='" + currRow + "'></div>");
-                if(c<numCols-1)
+                if(c<numCols-1){
                     gameBoard.append(
                         "<div class='box' row='"+ currRow +"' col='" + c + "'></div>");
+                    totalBoxes++;
+                }
             }
         }
     }
 }
 
+updateScore();
+
+
 $('.line').click(
     function(){
+        var madeSquare = false;
         $(this).addClass('drawn');
         var boxArr = [];
         if($(this).hasClass("hLine")){
@@ -48,10 +58,18 @@ $('.line').click(
 
         for(var b=0; b<boxArr.length; b++){
             var currBox = boxArr[b];
-            if(fullSquare(currBox))
+            console.log(numClicks);
+            if(fullSquare(currBox)){
                 currBox.addClass("p" + numClicks%2);
-            else
-                numClicks++;
+                playerScores[numClicks%2]++;
+                madeSquare = true;
+                updateScore();
+            }
+        }
+        if(!madeSquare){
+            playerDisplays[numClicks%2].removeClass("currTurn");
+            numClicks++;
+            playerDisplays[numClicks%2].addClass("currTurn");
         }
     }
 );
@@ -66,4 +84,10 @@ function fullSquare(box){
     var rightLine = $(".line[r=" + currCol + "][row=" + currRow + "]").hasClass("drawn");
 
     return bottomLine && topLine && leftLine && rightLine;
+}
+
+function updateScore(){
+    for(var p=0; p<playerScores.length; p++)
+        playerDisplays[p].text(playerScores[p]);
+    leftOver.text(totalBoxes-playerScores[0]-playerScores[1]);
 }

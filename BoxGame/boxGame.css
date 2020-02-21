@@ -17,6 +17,34 @@ body{
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
+    padding: 10px;
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    grid-gap: 100px;
+}
+
+.score{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 80px;
+    font-family: 'Odibee Sans';
+}
+
+#score0.currTurn{
+    box-shadow: inset 0px 0px 5px 5px #185e1c;
+}
+
+#score1.currTurn{
+    box-shadow: inset 0px 0px 5px 5px #1d268a;
+}
+
+#leftOver{
+    background-color: #000;
 }
 
 #gameBoard{
