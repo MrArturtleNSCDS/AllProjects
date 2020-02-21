@@ -1,11 +1,11 @@
 body,html{
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
 }
 
 #gameBoard{
-    width: 520px;
-    height: 520px;
+    width: 500px;
+    height: 500px;
     border: 1px dotted #aaa;
     padding: 10px;
     background-color: #800;
@@ -16,9 +16,33 @@ body,html{
 }
 
 .dot{
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     float:left;
     background-color: white;
     border-radius: 50%;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    float:left;
+    background-color: #300;
+}
+
+.line{
+    box-sizing: border-box;
+    background-color: #600;
+    float: left;
+    border-radius: 5px;
+}
+
+.hLine{
+    width: 50px;
+    height: 5px;
+}
+
+.vLine{
+    width: 5px;
+    height: 50px;
 }
