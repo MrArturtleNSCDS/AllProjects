@@ -35,12 +35,24 @@ body{
     font-family: 'Odibee Sans';
 }
 
+#score0{
+    color: #228328;
+}
+
+#score1{
+    color: #014470;
+}
+
 #score0.currTurn{
-    box-shadow: inset 0px 0px 5px 5px #185e1c;
+    box-shadow: inset 0px 0px 5px 5px #3deb48;
 }
 
 #score1.currTurn{
-    box-shadow: inset 0px 0px 5px 5px #1d268a;
+    box-shadow: inset 0px 0px 5px 5px #008fee;
+}
+
+.currTurn{
+    color:#fff !important;
 }
 
 #leftOver{
@@ -111,5 +123,5 @@ body{
 }
 
 .p1{
-    background-color: #3747ff;
+    background-color: #005b96;
 }
