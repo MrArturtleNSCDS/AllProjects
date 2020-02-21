@@ -6,13 +6,19 @@ for(var r=0; r<20; r++){
         for(var c=0; c<10; c++){
             gameBoard.append("<div class='dot'></div>");
             if(c<9)
-                gameBoard.append("<div class='line hLine'></div>");
+                gameBoard.append("<div class='line hLine' t='" + (r/2) + "'></div>");
         }
     else
         if(r<19)
             for(var c=0; c<10; c++){
                 gameBoard.append("<div class='line vLine'></div>");
                 if(c<9)
-                    gameBoard.append("<div class='box'></div>");
+                    gameBoard.append("<div class='box' r='"+ ((r-1)/2) +"' c='" + c + "'></div>");
             }
 }
+
+$('.line').click(
+    function(){
+        $(this).addClass('drawn');
+    }
+);
