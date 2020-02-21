@@ -5,6 +5,18 @@ body,html{
 
 body{
     background-color: #111;
+    overflow: hidden;
+}
+
+#scoreBoard{
+    background-color: #222;
+    border-radius: 10px;
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #gameBoard{
@@ -33,6 +45,9 @@ body{
     height: 44px;
     float:left;
     /*background-color: #300;*/
+    color: #222;
+    text-align: center;
+    line-height: 44px;
 }
 
 .line{
@@ -40,7 +55,7 @@ body{
     float: left;
     border-radius: 5px;
     cursor: pointer;
-    /*background-color: #fff;*/
+    background-color: #111;
 }
 
 .hLine{
@@ -57,4 +72,16 @@ body{
 
 .drawn{
     background-color: #fff;
+}
+
+.lineCheck{
+    background-color: #f90;
+}
+
+.p0{
+    background-color: #289c2f;
+}
+
+.p1{
+    background-color: #3747ff;
 }
