@@ -2,7 +2,7 @@ console.info("javascript loaded");
 var gameBoard = $("#gameBoard");
 var leftOver = $("#leftOver");
 var numRows = 10;
-var numCols = 10;
+var numCols = 9;
 var numClicks = 0;
 var totalBoxes = 0;
 var playerScores = [0,0];
