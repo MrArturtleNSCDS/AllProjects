@@ -1,44 +1,72 @@
 console.info("javascript loaded");
 var gameBoard = $("#gameBoard");
 var leftOver = $("#leftOver");
-var numRows = 10;
-var numCols = 9;
-var numClicks = 0;
-var totalBoxes = 0;
-var playerScores = [0,0];
+var numRows;
+var numCols;
+var numRowsSelect = $("#numRows");
+var numColsSelect = $("#numCols");
+var numClicks;
+var totalBoxes;
+var playerScores;
 var playerDisplays = [$("#score0"),$("#score1")];
 
-for(var r=0; r<numRows*2; r++){
-    if(r%2==0){
-        for(var c=0; c<numCols; c++){
-            gameBoard.append("<div class='dot'></div>");
-            if(c<numCols-1){
-                var currRow = r/2;
-                var tValue = currRow<numRows-1?currRow:-1;
-                var bValue = currRow>0?currRow-1:-1;
-                gameBoard.append("<div class='line hLine' t='" + tValue + "' b='" + bValue + "' col='" + c + "'></div>");
+
+init();
+
+function init(){
+    numRows = numRowsSelect.val();
+    numCols = numColsSelect.val();;
+    numClicks = 0;
+    totalBoxes = 0;
+    playerScores = [0,0];
+    
+    gameBoard.empty();
+
+
+    var gameBoardWidth = numCols*10 + (numCols-1)*44;
+    var gameBoardHeight = numRows*10 + (numRows-1)*44;
+
+    gameBoard.width(gameBoardWidth);
+    gameBoard.height(gameBoardHeight);
+
+    for(var r=0; r<numRows*2; r++){
+        if(r%2==0){
+            for(var c=0; c<numCols; c++){
+                gameBoard.append("<div class='dot'></div>");
+                if(c<numCols-1){
+                    var currRow = r/2;
+                    var tValue = currRow<numRows-1?currRow:-1;
+                    var bValue = currRow>0?currRow-1:-1;
+                    gameBoard.append("<div class='line hLine' t='" + tValue + "' b='" + bValue + "' col='" + c + "'></div>");
+                }
             }
         }
-    }
-    else{
-        if(r<(numRows*2)-1){
-            var currRow = (r-1)/2;
-            for(var c=0; c<numCols; c++){
-                var lValue = c<numCols-1?c:-1;
-                var rValue = c>0?c-1:-1;
-                gameBoard.append("<div class='line vLine' l='" + lValue + "' r='" + rValue + "' row='" + currRow + "'></div>");
-                if(c<numCols-1){
-                    gameBoard.append(
-                        "<div class='box' row='"+ currRow +"' col='" + c + "'></div>");
-                    totalBoxes++;
+        else{
+            if(r<(numRows*2)-1){
+                var currRow = (r-1)/2;
+                for(var c=0; c<numCols; c++){
+                    var lValue = c<numCols-1?c:-1;
+                    var rValue = c>0?c-1:-1;
+                    gameBoard.append("<div class='line vLine' l='" + lValue + "' r='" + rValue + "' row='" + currRow + "'></div>");
+                    if(c<numCols-1){
+                        gameBoard.append(
+                            "<div class='box' row='"+ currRow +"' col='" + c + "'></div>");
+                        totalBoxes++;
+
+                    }
                 }
             }
         }
     }
+
+    updateScore();
 }
 
-updateScore();
-
+$('select').change(
+    function(){
+        init();
+    }
+);
 
 $('.line').click(
     function(){

@@ -7,13 +7,34 @@
         <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
     </head>
     <body>
-        <div id='scoreBoard'>
-            <div id='score0' class='score p0 currTurn'>0</div>
-            <div id='leftOver' class='score'>0</div>
-            <div id='score1' class='score p1'>0</div>
+        <div id='gameWrapper'>
+            <div id='scoreBoard'>
+                <div id='score0' class='score p0 currTurn'>0</div>
+                <div id='leftOver' class='score'>0</div>
+                <div id='score1' class='score p1'>0</div>
+            </div>
+            <div id='gameBoard'></div>
+            <div id='sizeWrapper'>
+                <select id='numRows'>
+                    <option val='5'>5</option>
+                    <option val='6'>6</option>
+                    <option val='7'>7</option>
+                    <option val='8'>8</option>
+                    <option val='9'>9</option>
+                    <option val='10'>10</option>
+                </select>
+                x
+                <select id='numCols'>
+                    <option val='5'>5</option>
+                    <option val='6'>6</option>
+                    <option val='7'>7</option>
+                    <option val='8'>8</option>
+                    <option val='9'>9</option>
+                    <option val='10'>10</option>
+                </select>
+            </div>
         </div>
-        <div id='gameBoard'></div>
 
     </body>
-    <script src='boxGame.min.js'></script>
+    <script src='boxGame.js'></script>
 </html>
