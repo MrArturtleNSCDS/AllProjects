@@ -58,7 +58,7 @@ function init(){
             }
         }
     }
-
+    bindClicks();
     updateScore();
 }
 
@@ -68,41 +68,43 @@ $('select').change(
     }
 );
 
-$('.line').click(
-    function(){
-        if(!$(this).hasClass("drawn")){
-            var madeSquare = false;
-            $(this).addClass('drawn');
-            var boxArr = [];
-            if($(this).hasClass("hLine")){
-                var colChecking = $(this).attr("col");
-                boxArr.push($(".box[row=" + $(this).attr("b") + "][col=" + colChecking + "]"));
-                boxArr.push($(".box[row=" + $(this).attr("t") + "][col=" + colChecking + "]"));
-            }
-            else{
-                var rowChecking = $(this).attr("row");
-                boxArr.push($(".box[row=" + rowChecking + "][col=" + $(this).attr("l") + "]"));
-                boxArr.push($(".box[row=" + rowChecking + "][col=" + $(this).attr("r") + "]"));
-            }
+function bindClicks(){
+    $('.line').click(
+        function(){
+            if(!$(this).hasClass("drawn")){
+                var madeSquare = false;
+                $(this).addClass('drawn');
+                var boxArr = [];
+                if($(this).hasClass("hLine")){
+                    var colChecking = $(this).attr("col");
+                    boxArr.push($(".box[row=" + $(this).attr("b") + "][col=" + colChecking + "]"));
+                    boxArr.push($(".box[row=" + $(this).attr("t") + "][col=" + colChecking + "]"));
+                }
+                else{
+                    var rowChecking = $(this).attr("row");
+                    boxArr.push($(".box[row=" + rowChecking + "][col=" + $(this).attr("l") + "]"));
+                    boxArr.push($(".box[row=" + rowChecking + "][col=" + $(this).attr("r") + "]"));
+                }
 
-            for(var b=0; b<boxArr.length; b++){
-                var currBox = boxArr[b];
-                console.log(numClicks);
-                if(fullSquare(currBox)){
-                    currBox.addClass("p" + numClicks%2);
-                    playerScores[numClicks%2]++;
-                    madeSquare = true;
-                    updateScore();
+                for(var b=0; b<boxArr.length; b++){
+                    var currBox = boxArr[b];
+                    console.log(numClicks);
+                    if(fullSquare(currBox)){
+                        currBox.addClass("p" + numClicks%2);
+                        playerScores[numClicks%2]++;
+                        madeSquare = true;
+                        updateScore();
+                    }
+                }
+                if(!madeSquare){
+                    playerDisplays[numClicks%2].removeClass("currTurn");
+                    numClicks++;
+                    playerDisplays[numClicks%2].addClass("currTurn");
                 }
             }
-            if(!madeSquare){
-                playerDisplays[numClicks%2].removeClass("currTurn");
-                numClicks++;
-                playerDisplays[numClicks%2].addClass("currTurn");
-            }
         }
-    }
-);
+    );
+}
 
 function fullSquare(box){
     var currRow = box.attr("row");
