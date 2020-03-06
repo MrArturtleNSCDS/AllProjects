@@ -10,12 +10,12 @@ var totalBoxes;
 var playerScores;
 var playerDisplays = [$("#score0"),$("#score1")];
 
-
+$("#numCols option:last").prop("selected", true);
 init();
 
 function init(){
     numRows = numRowsSelect.val();
-    numCols = numColsSelect.val();;
+    numCols = numColsSelect.val();
     numClicks = 0;
     totalBoxes = 0;
     playerScores = [0,0];
@@ -86,16 +86,22 @@ function bindClicks(){
                     boxArr.push($(".box[row=" + rowChecking + "][col=" + $(this).attr("r") + "]"));
                 }
 
+                console.log(numClicks);
+
                 for(var b=0; b<boxArr.length; b++){
                     var currBox = boxArr[b];
-                    console.log(numClicks);
+                    var squareString = "NOT FULL SQUARE";
                     if(fullSquare(currBox)){
                         currBox.addClass("p" + numClicks%2);
                         playerScores[numClicks%2]++;
                         madeSquare = true;
                         updateScore();
+                        squareString = "FULL SQAURE";
                     }
+                    console.log(squareString);
+
                 }
+                
                 if(!madeSquare){
                     playerDisplays[numClicks%2].removeClass("currTurn");
                     numClicks++;
